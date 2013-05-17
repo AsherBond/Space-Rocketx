@@ -12,7 +12,7 @@
  */
 
 get_header(); ?>
-
+<!-- Begin index.php -->
 	<div id="primary" class="content-area">
 		<div id="content" class="sidebar blog site-content" role="main">
 
