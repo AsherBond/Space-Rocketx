@@ -1,0 +1,3 @@
+<div class="header-image">
+	<img class="img-responsive" width="986" height="288" src="<?php bloginfo('template_url'); ?>/assets/img/earth.png">
+</div>
