@@ -4324,3 +4324,6 @@ team .thumbnail-img {
 .affix {
   position: fixed;
 }
+.entry-content img.size-full {
+  display: none;
+}
