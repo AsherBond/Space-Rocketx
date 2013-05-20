@@ -3771,7 +3771,6 @@ team .thumbnail-img {
 }
 #s {
   margin-right: 7px;
-  width: 50%;
 }
 .single-post #post {
   margin-top: 0;
@@ -3971,8 +3970,7 @@ team .thumbnail-img {
     width: auto;
   }
   .sidebar.widget-area {
-    float: left;
-    width: auto;
+    width: ;
   }
 }
 /* Landscape phones and down */
