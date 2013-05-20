@@ -16,5 +16,6 @@
 		<?php wp_link_pages( array( 'before' => '<div class="page-links">' . __( 'Pages:', 'space_rocket' ), 'after' => '</div>' ) ); ?>
 	</div><!-- .entry-content -->
 	<?php edit_post_link( __( 'Edit', 'space_rocket' ), '<footer class="entry-meta"><span class="edit-link">', '</span></footer>' ); ?>
+	
 </article><!-- #post-## -->
 <!-- End content-page.php -->

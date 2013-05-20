@@ -80,6 +80,8 @@ hello@space-rocket.com</a></p>
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
+
+    
 <?php wp_footer(); ?>
 </body>
 </html>

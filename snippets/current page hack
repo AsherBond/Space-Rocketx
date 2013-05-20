@@ -1,0 +1,16 @@
+
+<script>
+           if (current.page == "/") {
+      $("#home").addClass("current_page_item");
+      } else if (location.pathname == "/home") {
+      $("#home").addClass("current_page_item");
+      } else if (location.pathname == "/team") {
+      $("#team").addClass("current_page_item");
+      } else if (location.pathname == "/portfolio") {
+      $("#portfolio").addClass("current_page_item");
+      } else if (location.pathname == "/services") {
+      $("#services").addClass("current_page_item");
+      } else if (location.pathname == "/blog") {
+      $("#blog").addClass("current_page_item");
+      }
+</script>

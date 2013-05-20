@@ -3,7 +3,7 @@
  * @package Space-Rocket
  */
 ?>
-<!-- Begin content-single.php -->
+<!-- Begin page-blog.php -->
 <article id="post" <?php post_class(); ?>>
 	
 	<header class="entry-header">

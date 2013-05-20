@@ -8,7 +8,7 @@
 get_header(); ?>
 <!-- Begin single.php -->
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="sidebar blog site-content" role="main">
 
 		<?php while ( have_posts() ) : the_post(); ?>
 

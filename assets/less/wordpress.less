@@ -80,8 +80,12 @@ img.mission {
 li a  {
 color: @gray;
 }
-input, textarea, .uneditable-input {
+// Some forms
+input, textarea, .uneditable-input, .form-submit #submit {
     width: auto;
+}
+#commentform input, textarea, #commentform .uneditable-input {
+    width: 100%;
 }
 // Footer Styles
 .site-contact {
@@ -281,11 +285,17 @@ team .thumbnail-img {
 }
 // Blog Page Styles
 #post {
-    margin-top: 20px;
     margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: hidden;
 }
-.img-wrap  {
-    width: 325px;
+.img-wrap {
+    display: block;
+    float: left;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: auto;
 }
 .blog .entry-header {
     margin: 0;
@@ -313,7 +323,24 @@ team .thumbnail-img {
 #s {
     margin-right: 7px;
 }
-
+// Blog single page styles
+.single-post #post {
+    margin-top: 0;
+}
+.avatar.photo {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+.navigation-post {
+    width: 100%;
+}
+.nav-previous {
+    float: left;
+}
+.nav-next {
+    float: right;
+}
     /* Large desktop */
     @media (min-width: 1200px) { 
 // body {

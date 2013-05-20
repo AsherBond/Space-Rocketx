@@ -649,7 +649,6 @@ h1,
 h2,
 h3 {
   line-height: 40px;
-  text-align: center;
 }
 h1 {
   font-size: 24.1428564px;
@@ -1808,7 +1807,8 @@ button.close {
 }
 .btn,
 .submit,
-.gform_button {
+.gform_button,
+.form-submit > input {
   display: inline-block;
   *display: inline;
   /* IE7 inline-block hack */
@@ -1852,21 +1852,27 @@ button.close {
 .btn:hover,
 .submit:hover,
 .gform_button:hover,
+.form-submit > input:hover,
 .btn:focus,
 .submit:focus,
 .gform_button:focus,
+.form-submit > input:focus,
 .btn:active,
 .submit:active,
 .gform_button:active,
+.form-submit > input:active,
 .btn.active,
 .submit.active,
 .gform_button.active,
+.form-submit > input.active,
 .btn.disabled,
 .submit.disabled,
 .gform_button.disabled,
+.form-submit > input.disabled,
 .btn[disabled],
 .submit[disabled],
-.gform_button[disabled] {
+.gform_button[disabled],
+.form-submit > input[disabled] {
   color: #ffffff;
   background-color: #100a1d;
   *background-color: #05040a;
@@ -1874,22 +1880,27 @@ button.close {
 .btn:active,
 .submit:active,
 .gform_button:active,
+.form-submit > input:active,
 .btn.active,
 .submit.active,
-.gform_button.active {
+.gform_button.active,
+.form-submit > input.active {
   background-color: #000000 \9;
 }
 .btn:first-child,
 .submit:first-child,
-.gform_button:first-child {
+.gform_button:first-child,
+.form-submit > input:first-child {
   *margin-left: 0;
 }
 .btn:hover,
 .submit:hover,
 .gform_button:hover,
+.form-submit > input:hover,
 .btn:focus,
 .submit:focus,
-.gform_button:focus {
+.gform_button:focus,
+.form-submit > input:focus {
   color: #ffffff;
   text-decoration: none;
   background-position: 0 -15px;
@@ -1900,7 +1911,8 @@ button.close {
 }
 .btn:focus,
 .submit:focus,
-.gform_button:focus {
+.gform_button:focus,
+.form-submit > input:focus {
   outline: thin dotted #333;
   outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
@@ -1908,9 +1920,11 @@ button.close {
 .btn.active,
 .submit.active,
 .gform_button.active,
+.form-submit > input.active,
 .btn:active,
 .submit:active,
-.gform_button:active {
+.gform_button:active,
+.form-submit > input:active {
   background-image: none;
   outline: 0;
   -webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.15), 0 1px 2px rgba(0,0,0,.05);
@@ -1920,9 +1934,11 @@ button.close {
 .btn.disabled,
 .submit.disabled,
 .gform_button.disabled,
+.form-submit > input.disabled,
 .btn[disabled],
 .submit[disabled],
-.gform_button[disabled] {
+.gform_button[disabled],
+.form-submit > input[disabled] {
   cursor: default;
   background-image: none;
   opacity: 0.65;
@@ -3509,8 +3525,14 @@ li a {
 }
 input,
 textarea,
-.uneditable-input {
+.uneditable-input,
+.form-submit #submit {
   width: auto;
+}
+#commentform input,
+textarea,
+#commentform .uneditable-input {
+  width: 100%;
 }
 .site-contact {
   background: url("../images/footer-top.png") repeat-x scroll 0 29px, url("../images/body_bg_2.jpg") repeat-x scroll 0 34px;
@@ -3712,11 +3734,17 @@ team .thumbnail-img {
   background: url("../images/maintain.png") repeat-y scroll 0 0 transparent;
 }
 #post {
-  margin-top: 20px;
   margin-bottom: 20px;
+  margin-top: 20px;
+  overflow: hidden;
 }
 .img-wrap {
-  width: 325px;
+  display: block;
+  float: left;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: auto;
 }
 .blog .entry-header {
   margin: 0;
@@ -3743,6 +3771,23 @@ team .thumbnail-img {
 }
 #s {
   margin-right: 7px;
+}
+.single-post #post {
+  margin-top: 0;
+}
+.avatar.photo {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+.navigation-post {
+  width: 100%;
+}
+.nav-previous {
+  float: left;
+}
+.nav-next {
+  float: right;
 }
 /* Large desktop */
 @media (min-width: 1200px) {
