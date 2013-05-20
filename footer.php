@@ -65,9 +65,14 @@ hello@space-rocket.com</a></p>
 
 			</div>
 					<div class="creds wrapper">
+						<div class="pull-left">
+							<p>2013 &copy; Space-Rocket / Web and Graphic Design</p>
+						</div>
+						<div class="pull-right">
 						<?php do_action( 'space_rocket_credits' ); ?>
 						<a href="http://wordpress.org/" title="<?php esc_attr_e( 'A Semantic Personal Publishing Platform', 'space_rocket' ); ?>" rel="generator"><?php printf( __( 'Proudly powered by %s', 'space_rocket' ), 'WordPress' ); ?></a>
 						<a href="http://twitter.github.io/bootstrap/" title="<?php esc_attr_e( 'Sleek, intuitive, and powerful front-end framework for faster and easier web development.', 'space_rocket' ); ?>" rel="props">and Twitter Bootstrap</a>
+						</div>
 					</div>
 
 		</div><!-- .site-info -->
