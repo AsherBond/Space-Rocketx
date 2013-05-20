@@ -1,4 +1,4 @@
 Twitter Bootstrap Wordpress Theme, Space-RocketX 
 ===
 
-a
+The space-rocket.com Mobile, tablet and desktop resposive Wordpress theme featuring Twitter Bootstrap. 
