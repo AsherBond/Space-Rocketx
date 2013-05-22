@@ -8,9 +8,10 @@
  */
 
 get_header(); ?>
+<!-- Begin archive.php -->
 
 	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="sidebar blog site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -107,6 +108,6 @@ get_header(); ?>
 
 		</div><!-- #content -->
 	</section><!-- #primary -->
-
+<!-- End archive.php -->
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>
