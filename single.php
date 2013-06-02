@@ -13,7 +13,7 @@ get_header(); ?>
 		<?php while ( have_posts() ) : the_post(); ?>
 
 			<?php get_template_part( 'content', 'single' ); ?>
-
+</div><!-- #content -->
 			<?php space_rocket_content_nav( 'nav-below' ); ?>
 
 			<?php
@@ -23,8 +23,8 @@ get_header(); ?>
 			?>
 
 		<?php endwhile; // end of the loop. ?>
-
-		</div><!-- #content -->
+			</div>
+		
 	</div><!-- #primary -->
 <!-- End single.php -->
 <?php get_sidebar(); ?>

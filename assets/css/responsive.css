@@ -834,7 +834,7 @@
   .navbar {
     position: fixed;
     width: 100%;
-    z-index: 1;
+    z-index: 6;
   }
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -868,6 +868,7 @@
   }
   .nav-collapse .nav > li {
     float: none;
+    padding: 9px 15px;
   }
   .nav-collapse .nav > li > a {
     margin-bottom: 2px;
@@ -981,6 +982,9 @@
   .navbar-static .navbar-inner {
     padding-left: 10px;
     padding-right: 10px;
+  }
+  .navbar-inner {
+    min-height: 40px;
   }
 }
 @media (min-width: 768px) {

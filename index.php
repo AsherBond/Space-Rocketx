@@ -13,6 +13,12 @@
 
 get_header(); ?>
 <!-- Begin index.php -->
+<header class="entry-header page-title">
+		<h1 class="entry-title">Latest News From Space-Rocket</h1>
+            <p>
+            Come here for free goodies and industry insights. 
+            </p> 
+    </header><!-- .entry-header -->
 	<div id="primary" class="content-area">
 		<div id="content" class="sidebar blog site-content" role="main">
 

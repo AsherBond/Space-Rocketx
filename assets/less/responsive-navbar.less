@@ -16,8 +16,8 @@
   .navbar {
     position: fixed;
     width: 100%;
-    z-index: 1;
-}
+    z-index: 6;
+  }
   // Unfix the navbars
   .navbar-fixed-top,
   .navbar-fixed-bottom {
@@ -55,9 +55,10 @@
     float: none;
     margin: 0 0 (@baseLineHeight / 2);
   }
-  .nav-collapse .nav > li {
+.nav-collapse .nav > li {
     float: none;
-  }
+    padding: 9px 15px;
+}
   .nav-collapse .nav > li > a {
     margin-bottom: 2px;
   }
@@ -176,6 +177,11 @@
     padding-left:  10px;
     padding-right: 10px;
   }
+  // Make the navbar smaller on mobile devices to save on real estate space
+  // ----------
+  .navbar-inner {
+    min-height: 40px;
+}
 
 
 }

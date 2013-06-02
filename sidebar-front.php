@@ -7,7 +7,7 @@
 ?>
 	<div id="secondary" class="front widget-area" role="complementary">
 		<h1 class="entry-title">How we work</h1>
-			<aside id="" class="widget thumbnails">
+			<aside class="widget thumbnails">
 				<div class="thumbnail">
 					<div class="thumbnail-img-title">
 				    <div class="plan thumbnail-img"></div>
@@ -17,7 +17,7 @@
 				 </div>
 			</aside>
 
-			<aside id="" class="widget thumbnails">
+			<aside class="widget thumbnails">
 				<div class="thumbnail">
 					<div class="thumbnail-img-title">
 				     <div class="prototype thumbnail-img"></div>
@@ -27,7 +27,7 @@
 				 </div>
 			</aside>
 
-			<aside id="" class="widget thumbnails">
+			<aside class="widget thumbnails">
 				<div class="thumbnail">
 					<div class="thumbnail-img-title">
 				     <div class="create thumbnail-img"></div>
@@ -37,7 +37,7 @@
 				 </div>
 			</aside>
 
-			<aside id="" class="widget thumbnails">
+			<aside class="widget thumbnails">
 				<div class="thumbnail">
 					<div class="thumbnail-img-title">
 				     <div class="test thumbnail-img"></div>
@@ -47,7 +47,7 @@
 				 </div>
 			</aside>
 
-			<aside id="" class="widget thumbnails">
+			<aside class="widget thumbnails">
 				<div class="thumbnail">
 					<div class="thumbnail-img-title">
 				     <div class="release thumbnail-img"></div>

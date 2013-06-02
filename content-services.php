@@ -6,8 +6,8 @@
 <!-- Begin content-single.php -->
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<h1 class="entry-title">What We Can Do For You.</h1>
-		<p>We love everything web and graphic. Our ability to provide awesome graphic design comes from over ten years experience in the field and our ability to code comes from a deep rooted passion for making visions come to life. We also provide content writing and ad campaigns to benefit your online goals based on SEO optimizations and analytics.</p>
+		<h1 class="entry-title">What We Can Do For You</h1>
+		<p>From hello to product launch and beyound, we are with you every step of the way.</p>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">

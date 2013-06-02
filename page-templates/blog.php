@@ -4,9 +4,9 @@
  */
 
 get_header(); ?>
-
+<!-- Begin blog.php -->
 	<div id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+		<div id="content" class="sidebar blog site-content" role="main">
 
 		<?php if ( have_posts() ) : ?>
 
@@ -18,7 +18,7 @@ get_header(); ?>
 					 * If you want to overload this in a child theme then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'content', get_post_format() );
+					get_template_part( 'content', 'blog', get_post_format() );
 				?>
 
 			<?php endwhile; ?>

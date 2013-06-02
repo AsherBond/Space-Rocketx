@@ -3,8 +3,9 @@
  * @package Space-Rocket
  */
 ?>
+
 <!-- Begin content.php -->
-<article id="post" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php if ( has_post_thumbnail() ) : ?>
 <div class="img-wrap">
 	<?php the_post_thumbnail(); ?>
@@ -12,7 +13,7 @@
 	<?php endif; ?>
 
 	<header class="entry-header">
-		<h1 class="blog-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'space_rocket' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+		<h2 class="blog-title"><a href="<?php the_permalink(); ?>" title="<?php echo esc_attr( sprintf( __( 'Permalink to %s', 'space_rocket' ), the_title_attribute( 'echo=0' ) ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<p class="entry-meta">

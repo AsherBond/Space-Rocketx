@@ -23,7 +23,7 @@
     width: 111px;
 }
 #slide-nav-one {
-    bottom: -86px;
+    bottom: 0;
     list-style: none outside none;
     margin: 0 auto;
     position: absolute;
@@ -36,6 +36,7 @@
     width: 91px;
 }
 #slide-nav-one li a {
+    color: @white;
     display: block;
     font-size: 14px;
     font-style: italic;
@@ -65,6 +66,10 @@
 }
 .ie6 #slide-nav-one li, .ie7 #slide-nav-two li {
   display: inline;
+}
+// Need to add figure out why current class doesnt't work on content-single.php
+.single-post #magic-line, .archive #magic-line {
+  left: 376px;
 }
 
 // Make from Slide to BS Dropdown
@@ -129,6 +134,8 @@
 .ie6 #slide-nav-one li, .ie7 #slide-nav-two li {
   display: block;
 }
+
+
 }
 
 

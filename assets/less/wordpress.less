@@ -1,3 +1,17 @@
+// Use these attributes for developing
+// #page {
+//     background-color: @red;
+// }
+// #main {
+//     background-color: @pink;
+// }
+// #content {
+//     background-color: @green;
+// }
+// #secondary {
+//     background-color: @purple;
+// }
+
 
 // Header Styles
 .site-header {
@@ -9,7 +23,6 @@
     position: absolute;
     z-index: 0;
 }
-
 // Logo Styles
 #logo {
   width: 300px;
@@ -21,7 +34,6 @@
 #logo.visible-phone {
     width: 200px;
 }
-
 // Nav Styles
 nav {
     .span (7);
@@ -35,9 +47,6 @@ nav {
     right: 0;
     width: 100%;
 }
-
-
-
 // Page Styles
 #page {
     background: url("../images/body_bg.jpg") repeat scroll 0 0 transparent;
@@ -63,9 +72,6 @@ img.mission {
    .container-fixed();
    position: relative;
 }
-.front.widget-area, .site-content  {
-   overflow: hidden;
-}
 .entry-header {
     margin: 0 auto 70px;
     text-align: center;
@@ -74,15 +80,18 @@ img.mission {
     text-align: center;
 }
 .entry-content p {
-    font-style: italic;
-    margin-bottom: 0px;
+    line-height: 26px;
+    margin-bottom: 20px;
 }
 li a  {
 color: @gray;
 }
-// Some forms
+// Some forms styles
 input, textarea, .uneditable-input, .form-submit #submit {
     width: auto;
+}
+.comment-meta {
+    margin-bottom: 15px;
 }
 #commentform input, textarea, #commentform .uneditable-input {
     width: 100%;
@@ -135,6 +144,16 @@ footer .logo {
     position: relative;
     width: 150px;
 }
+.follow-us {
+    float: right;
+    position: relative;
+    width: 166px;
+}
+.follow-us p {
+    float: left !important;
+    padding-top: 15px;
+    width: auto !important;
+}
 .social li {
     display: inline;
 }
@@ -182,7 +201,7 @@ li.follow {
 // Sidebar Page Styles
 .sidebar.site-content {
     float: left;
-    width: 70%;
+    width: 68%;
 }
 .sidebar.widget-area {
     float: right;
@@ -190,8 +209,9 @@ li.follow {
 }
 // Team Page Styles
 .team h4 {
-    border-bottom: 1px solid #D82488;
+    border-bottom: 1px solid @pink;
     color: #D82488;
+    margin-bottom: 10px;
     overflow: hidden;
     padding: 68px 16px 14px;
     position: relative;
@@ -202,17 +222,13 @@ li.follow {
 .team-profile p {
     left: 14px;
     margin: 0 0 30px;
+    overflow: hidden;
+    padding-right: 15px;
     position: relative;
-}
-team .thumbnail-img {
-    height: 114px;
-    margin: 0 auto;
-    width: 158px;
 }
 .team .thumbnail-img {
     float: left;
     height: 200px;
-    margin: 0;
     width: 155px;
 }
 .team ul {
@@ -284,16 +300,29 @@ team .thumbnail-img {
     background: url("../images/maintain.png") repeat-y scroll 0 0 transparent;
 }
 // Blog Page Styles
-#post {
-    margin-bottom: 20px;
-    margin-top: 20px;
-    overflow: hidden;
+#secondary {
+    padding: 15px;
+}
+.blog #secondary {
+    padding: 0 15px 15px;
+}
+.about-author {
+    padding: 15px 0;
+}
+.about-author h4 {
+    margin-top: 0;
+}
+.full-img-wrap {
+    margin-bottom: 15px;
+}
+aside {
+    margin-bottom: 25px;
 }
 .img-wrap {
     display: block;
     float: left;
     height: 100%;
-    margin-bottom: 35px;
+    margin-bottom: 15px;
     margin-right: 20px;
     overflow: hidden;
     position: relative;
@@ -306,6 +335,10 @@ team .thumbnail-img {
 .blog .img-wrap img {
     float: left;
     margin-right: 20px;
+}
+.blog .entry-header.page-title {
+    margin: 0 auto 70px;
+    text-align: center;
 }
 .blog-title {
     text-align: left;
@@ -324,6 +357,7 @@ team .thumbnail-img {
 }
 #s {
     margin-right: 7px;
+    width: 60%;
 }
 // Blog single page styles
 .single-post #post {
@@ -331,8 +365,21 @@ team .thumbnail-img {
 }
 .avatar.photo {
     float: left;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    margin-left: 15px;
     margin-right: 15px;
+}
+.author-info {
+    margin-bottom: 18px;
+}
+.author-description {
+    padding-right: 15px;
+}
+.author-description a {
+    color: @textColor;
+}
+.author-description a:hover {
+    color: @linkColorHover;
 }
 .navigation-post {
     width: 100%;
@@ -415,11 +462,15 @@ team .thumbnail-img {
 /* Blog Portrait tablet to landscape and desktop */
 .post .img-wrap {
     margin: 0 auto;
+    padding-right: 10px;
     width: 325px;
 }
 .blog .img-wrap img {
     float: none;
     margin: 0;
+}
+#s {
+    margin-bottom: 7px;
 }
      }
      
@@ -431,8 +482,18 @@ team .thumbnail-img {
 .wrapper, .site-main, .content-area, .entry-content, .front.widget-area, .site-content {
     width: auto;
 }
+// Make the page titles readable on mobile landscape
+h1 {
+    font-size: 18px;
+}
 .navbar-inner {
     min-height: 111px;
+}
+.btn, .submit, .gform_button, .form-submit > input {
+    font-size: 9px;
+}
+.navbar .btn-navbar {
+    padding: 3px 7px 1px;
 }
 .site-contact .wrapper {
     width: auto;
@@ -483,6 +544,7 @@ team .thumbnail-img {
 .widget.thumbnails h3, .widget.thumbnails p {
     width: auto;
 }
+
 // Services Landscape phone to portrait tablet
 .design, .develop, .maintain {
     height: auto;
@@ -505,18 +567,21 @@ team .thumbnail-img {
 }
 .post .img-wrap {
     margin: 0 auto;
+    padding-right: 10px;
     width: 325px;
 }
 .blog .img-wrap img {
     float: none;
     margin: 0;
 }
+
 .sidebar.site-content {
     float: none;
     width: auto;
 }
 .sidebar.widget-area {
-    width: ;
+    float: left;
+    width: auto;
 }
 
 
@@ -535,18 +600,37 @@ team .thumbnail-img {
 ul, ol {
     margin: 0;
 }
+.site-header {
+    height: 79px;
+}
+.site-main {
+    padding-top: 20px;
+}
 #logo {
-    width: 82%;
     float: none;
+    width: 20%;
 }
 .hero-unit {
     width: auto;
+    overflow: hidden;
+}
+.carousel-inner {
+    margin-bottom: 5px;
+}
+.carousel-indicators {
+    left: 0;
+    margin: 0 auto;
+    right: 0;
+    width: 85px;
+}
+.carousel-control.right, .carousel-control.left, .carousel-indicators li {
+    transform: scale(0.5);
 }
 .carousel-control.right {
-    right: -30px;
+    right: 0px;
 }
 .carousel-control.left {
-    left: -30px;
+    left: 0px;
 }
 #carousel-frame {
     margin: -7px auto;
@@ -595,6 +679,10 @@ ul, ol {
     margin: 0 auto;
     width: 190px;
 }
+.follow-us {
+    float: none;
+    margin: 0 auto;
+}
 .social li {
     display: inline;
 }
@@ -613,6 +701,12 @@ ul, ol {
     left: 0;
     margin: 0 0 10px 16px;
 }
+// Move zoom icon to bottom right of image
+.fancybox.info {
+    bottom: 25px;
+    position: absolute;
+    right: 35px;
+}
 .services-content {
     width: auto;
 }
@@ -630,5 +724,10 @@ ul, ol {
     width: auto;
     margin: 0 auto;
 }
+article.post, #searchform {
+    margin-top: 10px;
+}
+
     }
+
 

@@ -4,7 +4,36 @@
     display: none;
 }
 
-// Need to add figure out why current class doesnt't work on content-single.php
-.single-post #magic-line {
-	left: 367px;
+
+
+// For some reason not working with share.less :/
+.share > ul {
+    margin: 0;
+}
+.share li {
+    display: inline;
+    padding-left: 10px;
+    padding-top: 13px;
+}
+.share-fb {
+    margin-right: 28px;
+}
+.share-g {
+    margin-right: 25px;
+}
+
+// Share Widget
+.widget ul.social {
+    height: 34px;
+    margin-bottom: 8px;
+    margin-top: -10px;
+    position: relative;
+    width: 100%;
+}
+.widget .fb, .widget .twitter, .widget .rss, .widget .yelp {
+    background-repeat: no-repeat;
+    float: left;
+    height: 31px;
+    position: relative;
+    width: 32px;
 }
